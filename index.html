@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+
+  <title>Micro Twitter</title>
+</head>
+<body>
+  <main class="main">
+
+    <header class="header">
+      <h1 class="header-title">Micro Twitter</h1>
+      <h2 class="header-subtitle">Really tiny twitter built with pure JavaScript</h2>
+    </header>
+
+    <section class="content" id="content">
+
+      <div class="widget">
+        <div class="container-tweet">
+          <div class="container-tweet-avatar"></div>
+          <div class="container-tweet-content">
+            <textarea class="input container-tweet-textarea" id="tweetText" placeholder="Some thoughts here"></textarea>
+            <button class="button container-tweet-button" id="tweetButton" disabled>Tweet</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget tweet-published">
+        <div class="container-tweet">
+          <div class="container-tweet-avatar"></div>
+          <div class="container-tweet-content">
+            <p class="container-tweet-desc">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, minus dolor! Veniam fugit deserunt libero dolores eos dolor obcaecati dolore neque consectetur illo vitae voluptas suscipit omnis itaque, sit magnam?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, minus dolor! Veniam fugit deserunt libero dolores eos dolor obcaecati dolore neque consectetur illo vitae voluptas suscipit omnis itaque, sit magnam?
+            </p>
+            <span class="container-tweet-date">
+              Published at 16/07/1998
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
