@@ -2,7 +2,7 @@
   'use strict';
 
   const $ = element => document.querySelector(element);
-
+  
   const loadComponent = async component => {
     const res = await fetch(`/components/${component}.html`);
     return await res.text();
@@ -11,6 +11,11 @@
   const attachTweetToDom = tweetComponent => {
     const content = $('#content');
     const div = document.createElement('div');
+
+    div.style.display = 'flex';
+    div.style.justifyContent = 'center';
+    div.style.alignItems = 'center';
+
     div.innerHTML = tweetComponent;
     content.insertBefore(div, content.childNodes[2]);
   };
