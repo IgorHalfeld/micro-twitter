@@ -49,6 +49,7 @@
     
     attachTweetToDom(tweetComponent);
     cleanUpTweetInput();
+    toggleDisableButton();
   };
 
   const addEventListeners = () => {
