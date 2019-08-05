@@ -9,9 +9,10 @@
   };
 
   const attachTweetToDom = tweetComponent => {
+    const content = $('#content');
     const div = document.createElement('div');
     div.innerHTML = tweetComponent;
-    $('#content').appendChild(div);
+    content.insertBefore(div, content.childNodes[2]);
   };
 
   const parseDate = dateString => {
